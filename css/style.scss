@@ -3,19 +3,17 @@
     padding: 0%;
 }
 
-ul{
-    list-style: none;
-    background-color: grey;
-}
 
 ul.parent{
+    background-color: grey;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 10px;
     li{
         position: relative;
+        list-style: none;
         a{
-            padding: 5px;
+            padding: 10px;
             text-transform: uppercase;
             text-decoration: none;
             font-size: 25px;
@@ -38,3 +36,67 @@ ul.parent{
         }
     }
 }
+
+
+
+.content{  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around;
+    .products{
+        list-style: none;
+            .product{
+                .title{
+                    font-size: 20px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                .discription{
+                    text-align: center;
+                }
+            }
+
+        li{
+            height: 200px;
+            width: 200px;
+            background-color: #f0f0f0;
+            position: relative;
+        
+            button{
+                position: absolute;
+                width: 200px;
+                bottom: 0%;
+                background-color: grey;
+                border: none;
+                height: 24px;
+            }
+            
+            img{
+                position: absolute;
+                width: 100px;
+                height: 80px;
+                bottom: 30px;
+                left: 45px;
+            }
+
+            &:hover{
+                button{
+                    background-color: rgb(111, 111, 232);
+                    color: #ffffff;
+                }
+                .title{
+                    color: rgb(239, 243, 240);
+                }
+                .discription{
+                    color: rgb(249, 243, 245);
+                }
+            }
+            }
+            &:hover{
+                .product{
+                    background-color:rgb(227, 142, 142);
+                }
+            }
+        }
+    }
