@@ -1,0 +1,185 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgba(248, 248, 255, 0.541);
+}
+
+/*Newsleter section*/
+.head{
+    background-color: rgb(218, 232, 243);
+    padding: 20px;
+    .header{
+        margin-left: 400px;
+        input{
+            height: 24px;
+            border-color: rgb(243, 186, 116);
+            padding: 15px;
+            width: 250px;
+            margin: 5px;
+        }
+        button{
+            background-color: rgb(237, 161, 69);
+            color: white;
+            border: none;
+            padding: 9px;
+            width: 150px;
+            margin: 5px;
+        }
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+/*from our  ollection*/
+.collection{
+    text-align: center;
+    padding: 40px;
+    .products{
+        text-align: left;
+        line-height: 25px;
+        margin-right: 100px;
+        margin-left: 100px;
+        h1{
+            color:  #b28051;
+        }
+        .button{
+            text-align: right;
+        button{
+            align-items: right;
+            font-family:'Courier New', Courier, monospace;
+            padding: 8px 15px;
+            border: 1px solid rgb(243, 186, 116);
+            cursor: pointer;
+        }
+    }
+    }
+    .jackets{
+        padding: 50px;
+        align-items: center;
+        ul{
+            line-height: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 20px;
+            gap: 60px;
+            li{
+                img{
+                    height: 250px;
+                    width: 200px;
+                }
+                p{
+                    color: rgb(237, 161, 69);
+                }
+                h3{
+                    font-family:'Courier New', Courier, monospace;
+                }
+            }
+
+        }
+    }
+    button{
+        font-family:'Courier New', Courier, monospace;
+        padding: 10px 29px;
+        border: 1px solid rgb(243, 186, 116);
+        cursor: pointer;
+    }
+}
+
+/*story behind*/
+.story{
+    display: flex;
+    background-color: #f4f4f4;
+    .story-image{
+        padding-right: 60px;
+        img{
+            width: 600px;
+            height: 300px;
+        }
+    }
+    .story-text{
+        line-height: 30px;
+        h2{
+            margin-top: 30px;
+        }
+        p{
+            margin-top: 30px;
+        }
+        button{
+            margin-top: 30px;
+            font-family:'Courier New', Courier, monospace;
+            padding: 9px 29px;
+            border: 1px solid rgb(243, 186, 116);
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .head {
+        padding: 10px;
+        .header {
+            margin-left: 0;
+            text-align: center;
+            input {
+                width: 200px;
+            }
+            button {
+                width: 120px;
+            }
+        }
+    }
+
+    .collection {
+        padding: 20px;
+        .products {
+            line-height: 30px;
+            h1 {
+                font-size: 18px;
+            }
+            .button {
+                text-align: center;
+                button {
+                    padding: 6px 12px;
+                }
+            }
+        }
+        .jackets ul {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            li img {
+                height: 200px;
+                width: 150px;
+            }
+        }
+        button {
+            padding: 8px 20px;
+        }
+    }
+
+    .story {
+        flex-direction: column;
+        text-align: center;
+        .story-image {
+            padding: 0;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .story-text {
+            padding: 10px;
+            h2 {
+                font-size: 20px;
+            }
+            button {
+                padding: 8px 20px;
+            }
+        }
+    }
+}
